@@ -208,12 +208,3 @@ namespace WindowsFormsExcercise {
         }        
     }
 }
-
-// HORNI LISTA, NACITANI, MENENI A UKLADANI SOUBORU, STATUS STRIP SE SOUBOREM, TAB INDEXY
-//try {
-//    material = " " + groupBox1.Controls.OfType<System.Windows.Forms.RadioButton>().FirstOrDefault(r => r.Checked).Text;
-//}
-//catch (System.NullReferenceException ex) {
-//    MessageBox.Show(ex.Message);
-//    material = "";
-//}
