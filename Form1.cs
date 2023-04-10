@@ -79,9 +79,12 @@ namespace WindowsFormsExcercise {
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e) {
             if (e.KeyCode == Keys.Escape) {
+                button2.FlatAppearance.BorderColor = Color.Red;
                 DialogResult dialog = MessageBox.Show("Chcete ukoncit?","Konec?",MessageBoxButtons.YesNo);
                 if (dialog == DialogResult.Yes) {
                     Application.Exit();
+                } else {
+                    button2.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 192);
                 }
             }
         }
