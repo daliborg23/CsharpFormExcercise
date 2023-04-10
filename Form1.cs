@@ -191,7 +191,7 @@ namespace WindowsFormsExcercise {
         private void ulozitToolStripMenuItem_Click(object sender, EventArgs e) {
             SaveFileDialog ulozit = new SaveFileDialog();
             ulozit.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            ulozit.Filter = "Text Files (.txt)|*.txt|All Files (*.*)|*.*";
+            ulozit.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
             ulozit.Title = "Save As";
             string initPath = Path.GetTempPath() + @"\FQUL";
             ulozit.InitialDirectory = Path.GetFullPath(initPath);
@@ -205,6 +205,6 @@ namespace WindowsFormsExcercise {
                 writing.Write(textBox3.Text);
                 writing.Close();
             }           
-        }        
+        }
     }
 }

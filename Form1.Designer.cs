@@ -365,6 +365,9 @@
             // 
             // button2
             // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button2.FlatAppearance.BorderSize = 10;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(430, 179);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 61);
@@ -430,6 +433,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(288, 124);
             this.textBox3.TabIndex = 9;
+            this.textBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // Form1
             // 
